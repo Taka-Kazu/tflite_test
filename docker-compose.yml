@@ -1,0 +1,10 @@
+version: '3'
+services:
+  tensorflow:
+    build: .
+    tty: true
+    volumes:
+      - .:/src
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    environment:
+      - DISPLAY=${DISPLAY}
