@@ -21,7 +21,7 @@ if __name__ == '__main__':
   parser.add_argument('--video', type=str, default='video.mp4', help='video file or device (default: video.mp4)')
   parser.add_argument('--model', type=str, default='ssdlite_mobiledet_coco_qat_postprocess.tflite', help='tflite model')
   parser.add_argument('--label_file', type=str, default='coco_labels.txt', help='object detection label file (default: coco_labels.txt)')
-  parser.add_argument('--num_threads', type=int, default=0, help='number of threads')
+  parser.add_argument('--num_threads', type=int, default=1, help='number of threads')
   parser.add_argument('--prob_threshold', type=float, default=0.3, help='min probability of detection result')
   args = parser.parse_args()
 
